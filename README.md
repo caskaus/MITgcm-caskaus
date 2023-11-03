@@ -14,7 +14,19 @@ Access the latest documentation [here](http://mitgcm.readthedocs.io/en/latest/)
 
 ```
 cd /scratch/ds2/km7623/MITgcm/verification/tutorial_global_oce_latlon
+cp -r /scratch/ds2/km7623/MITgcm/modules.sh .
+source modules.sh
 ```
 
-```../../../tools/genmake2 -mods ../code -optfile /scratch/ds2/km7623/MITgcm/tools/build_options/linux_amd64_ifort_gadi```
-```make depend```
+```
+../../../tools/genmake2 -mods ../code -optfile /scratch/ds2/km7623/MITgcm/tools/build_options/linux_amd64_ifort_gadi
+```
+
+```
+make depend
+```
+
+```
+make
+```
+After make is done successfully, you will end up with an executable ```mitgcmuv``` in the ```/build``` directory
