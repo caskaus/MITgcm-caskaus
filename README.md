@@ -35,5 +35,11 @@ After make is done successfully, you will end up with an executable ```mitgcmuv`
 cd ../run
 ln -s ../input/* .
 cp ../build/mitgcmuv .
+```
+Switchon/Add the flag: ```useMNC=.TRUE.```
+Copy the ```data.mnc``` file from ```/lab_sea``` case
+
+
+```
 mpirun -np 4 ./mitgcmuv > log_file.log
 ```
