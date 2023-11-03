@@ -30,3 +30,10 @@ make depend
 make
 ```
 After make is done successfully, you will end up with an executable ```mitgcmuv``` in the ```/build``` directory
+
+```
+cd ../run
+ln -s ../input/* .
+cp ../build/mitgcmuv .
+mpirun -np 4 ./mitgcmuv > log_file.log
+```
