@@ -1,3 +1,8 @@
+### Load these modules before working 
+###
+###source modules.sh
+
+
 module load pbs
 module load openmpi/4.1.5
 module load netcdf/4.9.2
